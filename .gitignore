@@ -71,3 +71,5 @@ public/sitemap*.xml
 
 # future_app dir
 future_app/
+# Sentry
+.sentryclirc

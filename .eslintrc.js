@@ -224,6 +224,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
 
         "react/display-name": "off",
+        "react/forbid-dom-props": "off",
       },
     },
     // allow requires in non-transpiled JS files and logical key ordering in config files
