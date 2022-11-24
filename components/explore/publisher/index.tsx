@@ -52,7 +52,7 @@ export const ContractPublisher: React.FC<ContractPublisherProps> = ({
 };
 
 export function replaceDeployerAddress(address: string) {
-  return address.replace("deployer.thirdweb.eth", "thirdweb.eth");
+  return address.replace("deployer.buns.eth", "buns.eth");
 }
 
 export function treatAddress(address: string) {

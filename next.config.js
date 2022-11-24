@@ -102,13 +102,13 @@ const moduleExports = {
       },
       // deployer to non-deployer url
       {
-        source: "/deployer.thirdweb.eth",
-        destination: "/thirdweb.eth",
+        source: "/deployer.buns.eth",
+        destination: "/buns.eth",
         permanent: false,
       },
       {
-        source: "/deployer.thirdweb.eth/:path*",
-        destination: "/thirdweb.eth/:path*",
+        source: "/deployer.buns.eth/:path*",
+        destination: "/buns.eth/:path*",
         permanent: false,
       },
     ];
@@ -116,12 +116,12 @@ const moduleExports = {
   async rewrites() {
     return [
       {
-        source: "/thirdweb.eth",
-        destination: "/deployer.thirdweb.eth",
+        source: "/buns.eth",
+        destination: "/deployer.buns.eth",
       },
       {
-        source: "/thirdweb.eth/:path*",
-        destination: "/deployer.thirdweb.eth/:path*",
+        source: "/buns.eth/:path*",
+        destination: "/deployer.buns.eth/:path*",
       },
     ];
   },
