@@ -8,14 +8,14 @@ import {
 } from "@chakra-ui/react";
 import { QueryClient, dehydrate } from "@tanstack/react-query";
 import { AppLayout } from "components/app-layouts/app";
-import { ContractCard } from "components/explore/contract-card";
+// import { ContractCard } from "components/explore/contract-card";
 import { DeployUpsellCard } from "components/explore/upsells/deploy-your-own";
 import { PublisherSDKContext } from "contexts/custom-sdk-context";
 import {
   ALL_CATEGORIES,
   ExploreCategory,
   getCategory,
-  prefetchCategory,
+  // prefetchCategory,
 } from "data/explore";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
@@ -88,7 +88,7 @@ const ExploreCategoryPage: ThirdwebNextPage = (
           </Text>
         </Flex>
         <SimpleGrid columns={{ base: 1, md: 3 }} gap={5}>
-          {props.category.contracts.map((publishedContractId, idx) => {
+          {/* {props.category.contracts.map((publishedContractId, idx) => {
             const [publisher, contractId] = publishedContractId.split("/");
             return (
               <ContractCard
@@ -101,7 +101,7 @@ const ExploreCategoryPage: ThirdwebNextPage = (
                 }}
               />
             );
-          })}
+          })} */}
         </SimpleGrid>
         <DeployUpsellCard />
       </Flex>
@@ -134,7 +134,7 @@ export const getStaticProps: GetStaticProps<ExplorePageProps> = async (ctx) => {
   }
   // pre load the data as well
   const queryClient = new QueryClient();
-  await prefetchCategory(category, queryClient);
+  // await prefetchCategory(category, queryClient);
 
   return {
     props: { category, dehydratedState: dehydrate(queryClient) },

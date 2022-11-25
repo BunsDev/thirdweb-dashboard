@@ -1,4 +1,4 @@
-import { ContractCard } from "../contract-card";
+// import { ContractCard } from "../contract-card";
 import { Flex, Icon, SimpleGrid } from "@chakra-ui/react";
 import { ExploreCategory } from "data/explore";
 import { FiArrowRight } from "react-icons/fi";
@@ -63,7 +63,7 @@ export const ContractRow: React.FC<ContractRowProps> = ({ category }) => {
         )}
       </Flex>
       <SimpleGrid columns={{ base: 1, md: 3 }} gap={5}>
-        {category.contracts.slice(0, 6).map((publishedContractId, idx) => {
+        {/* {category.contracts.slice(0, 6).map((publishedContractId, idx) => {
           const [publisher, contractId] = publishedContractId.split("/");
           return (
             <ContractCard
@@ -76,7 +76,7 @@ export const ContractRow: React.FC<ContractRowProps> = ({ category }) => {
               }}
             />
           );
-        })}
+        })} */}
       </SimpleGrid>
     </Flex>
   );

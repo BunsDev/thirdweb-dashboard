@@ -4,7 +4,7 @@ import {
   useEns,
   useReleasesFromDeploy,
 } from "components/contract-components/hooks";
-import { ContractCard } from "components/explore/contract-card";
+// import { ContractCard } from "components/explore/contract-card";
 import { useMemo } from "react";
 import { CardElevationWrapper } from "tw-components";
 
@@ -42,12 +42,12 @@ export const ReleasedBy: React.FC<ReleasedByProps> = ({ contractAddress }) => {
   return (
     <Box maxW="330px">
       <CardElevationWrapper>
-        <ContractCard
+        {/* <ContractCard
           contractId={releaseToShow.name}
           publisher={releaserAddress}
           version={releaseToShow.version}
           slim
-        />
+        /> */}
       </CardElevationWrapper>
     </Box>
   );
