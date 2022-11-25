@@ -25,7 +25,7 @@ import { FiExternalLink, FiImage } from "react-icons/fi";
 import invariant from "tiny-invariant";
 import { Button, Card, Heading, Link, Text, TrackedLink } from "tw-components";
 
-const publisherEnsAddress = "0xFd63Bf84471Bc55DD9A83fdFA293CCBD27e1F4C8"
+const publisherEnsAddress = "0xFd63Bf84471Bc55DD9A83fdFA293CCBD27e1F4C8";
 
 interface ContractCardProps {
   publisher: string;
@@ -313,7 +313,9 @@ async function queryFn(
   // polygon is chainID 137
   const polygonSdk = getEVMThirdwebSDK(137);
 
-  const publisherEns = await queryClient.fetchQuery(ensQuery(publisherEnsAddress));
+  const publisherEns = await queryClient.fetchQuery(
+    ensQuery(publisherEnsAddress),
+  );
   // START prefill both publisher ens variations
   if (publisherEns.address) {
     queryClient.setQueryData(

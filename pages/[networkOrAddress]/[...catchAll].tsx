@@ -284,7 +284,7 @@ function generateBuildTimePaths() {
       .filter((c) => c.contractType !== "custom")
       .map((v) => ({
         params: {
-          networkOrAddress: "deployer.buns.eth",
+          networkOrAddress: "deployer.thirdweb.eth",
           catchAll: [v.id],
         },
       })),

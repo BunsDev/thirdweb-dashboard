@@ -204,6 +204,6 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     fallback: "blocking",
-    paths: [{ params: { networkOrAddress: "deployer.buns.eth" } }],
+    paths: [{ params: { networkOrAddress: "deployer.thirdweb.eth" } }],
   };
 };

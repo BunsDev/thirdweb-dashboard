@@ -82,7 +82,7 @@ function buildContractForContractMap(
       bytecodeUri: "",
       metadataUri: "",
       audit: details.audit,
-      publisher: "deployer.buns.eth",
+      publisher: "deployer.thirdweb.eth",
     },
   };
 }
@@ -228,7 +228,7 @@ export const PREBUILT_SOLANA_CONTRACTS_MAP: Record<
       bytecodeUri: "",
       metadataUri: "",
       logo: FeatureIconMap["nft-collection"],
-      publisher: "deployer.buns.eth",
+      publisher: "deployer.thirdweb.eth",
     },
   },
   "nft-drop": {
@@ -247,7 +247,7 @@ export const PREBUILT_SOLANA_CONTRACTS_MAP: Record<
       bytecodeUri: "",
       metadataUri: "",
       logo: FeatureIconMap["nft-drop"],
-      publisher: "deployer.buns.eth",
+      publisher: "deployer.thirdweb.eth",
     },
   },
   token: {
@@ -266,7 +266,7 @@ export const PREBUILT_SOLANA_CONTRACTS_MAP: Record<
       bytecodeUri: "",
       metadataUri: "",
       logo: FeatureIconMap["token"],
-      publisher: "deployer.buns.eth",
+      publisher: "deployer.thirdweb.eth",
     },
   },
 };
