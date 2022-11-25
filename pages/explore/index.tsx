@@ -5,11 +5,7 @@ import { ContractRow } from "components/explore/contract-row";
 import { DeployUpsellCard } from "components/explore/upsells/deploy-your-own";
 import { ReleaseUpsellCard } from "components/explore/upsells/release-submit";
 import { PublisherSDKContext } from "contexts/custom-sdk-context";
-import {
-  EXPLORE_PAGE_DATA,
-  ExploreCategory,
-  // prefetchCategory,
-} from "data/explore";
+import { EXPLORE_PAGE_DATA, ExploreCategory } from "data/explore";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
 import { PageId } from "page-id";

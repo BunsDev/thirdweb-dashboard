@@ -11,12 +11,7 @@ import { AppLayout } from "components/app-layouts/app";
 // import { ContractCard } from "components/explore/contract-card";
 import { DeployUpsellCard } from "components/explore/upsells/deploy-your-own";
 import { PublisherSDKContext } from "contexts/custom-sdk-context";
-import {
-  ALL_CATEGORIES,
-  ExploreCategory,
-  getCategory,
-  // prefetchCategory,
-} from "data/explore";
+import { ALL_CATEGORIES, ExploreCategory, getCategory } from "data/explore";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
 import { PageId } from "page-id";
