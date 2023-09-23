@@ -1,5 +1,5 @@
 import type { QueryClient } from "@tanstack/query-core";
-// import { publishedContractQuery } from "components/explore/contract-card";
+import { publishedContractQuery } from "components/explore/contract-card";
 
 export type PublishedContractID = `${string}/${string}`;
 
@@ -148,15 +148,15 @@ export const EXPLORE_PAGE_DATA = Object.values(CATEGORIES);
 
 export const ALL_CATEGORIES = Object.values(CATEGORIES).map((v) => v.id);
 
-// export function prefetchCategory(
-//   category: ExploreCategory,
-//   queryClient: QueryClient,
-// ) {
-  // return Promise.all(
-    // category.contracts.map((contract) =>
-      // queryClient.fetchQuery(
-      //   publishedContractQuery(`${contract}/latest`, queryClient),
-      // ),
-    // ),
-  // );
-// }
+export function prefetchCategory(
+  category: ExploreCategory,
+  queryClient: QueryClient,
+) {
+  return Promise.all(
+    category.contracts.map((contract) =>
+      queryClient.fetchQuery(
+        publishedContractQuery(`${contract}/latest`, queryClient),
+      ),
+    ),
+  );
+}

@@ -5,7 +5,11 @@ import { ContractRow } from "components/explore/contract-row";
 import { DeployUpsellCard } from "components/explore/upsells/deploy-your-own";
 import { ReleaseUpsellCard } from "components/explore/upsells/release-submit";
 import { PublisherSDKContext } from "contexts/custom-sdk-context";
-import { EXPLORE_PAGE_DATA, ExploreCategory } from "data/explore";
+import {
+  EXPLORE_PAGE_DATA,
+  ExploreCategory,
+  prefetchCategory,
+} from "data/explore";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { NextSeo } from "next-seo";
 import { PageId } from "page-id";
@@ -71,7 +75,7 @@ export const getStaticProps: GetStaticProps<ExplorePageProps> = async () => {
 
   // pre load the data as well
   const queryClient = new QueryClient();
-  // await Promise.all(categories.map((c) => prefetchCategory(c, queryClient)));
+  await Promise.all(categories.map((c) => prefetchCategory(c, queryClient)));
 
   return {
     props: { categories, dehydratedState: dehydrate(queryClient) },

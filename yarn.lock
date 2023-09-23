@@ -419,7 +419,7 @@
     "@chakra-ui/visually-hidden" "2.0.13"
     "@zag-js/focus-visible" "0.1.0"
 
-"@chakra-ui/cli@^2.0.0":
+"@chakra-ui/cli@^2.1.8":
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.1.8.tgz#03aae0f84065bf5317a22696052fe653a1289187"
   integrity sha512-xIIHCvoluALzMola8f9+JmzMGC/WkU9WVdCxOzQRj/ltROAulE2HvFCYLYzwjAkIF4W4AY3Nrn6oDlQddmMYIg==
@@ -870,7 +870,7 @@
   dependencies:
     "@chakra-ui/utils" "2.0.12"
 
-"@chakra-ui/react@^2.0.0":
+"@chakra-ui/react@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-2.4.1.tgz#3f3db03e3aa7bcb0bee76427824b3437a9509166"
   integrity sha512-qZVRrQi5JRIc44EaeOaXvXt6EdWhkQjhFFL8hyH0RH6cSFlotmmzCHBT5N1jC6nqXFn5OOxOWMD9FIVsbI56hQ==
@@ -3470,10 +3470,10 @@
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/contracts/-/contracts-3.2.5.tgz#f1bb933a51503e2d65e264c5bbeac828af9de7be"
   integrity sha512-fYrHxSdIpLleJkDImWUVcve66VAKQHYDk+LXj04GqoM+asbnKEQQpCtKKnJcrfujwW0aWE5cyMZXVctDSwRe7g==
 
-"@thirdweb-dev/react@^3.6.3-nightly-2eaa67a":
-  version "3.6.3-nightly-2eaa67a"
-  resolved "https://registry.yarnpkg.com/@thirdweb-dev/react/-/react-3.6.3-nightly-2eaa67a.tgz#9977ab5e104722d42a610841cb1c7649f66563f8"
-  integrity sha512-T5P5O7FWrx1e6n0ceXNL3TxHDIK0IWhy30wFpuq9/CZCC2kVRbwghb/BsLNg5GEhBUNg+fBxmLsveryPfSKTzw==
+"@thirdweb-dev/react@^3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/react/-/react-3.6.2.tgz#891ed378ce308f10cb1757077f3414a9c191f1ec"
+  integrity sha512-BRNub9oh24wKAE2yjyDF3GGv5cYK2g7IA9aAHeDz+kiAkcCO014I9P69h8h1FkqOgqn6dkOM//i4cnL9bVWJ4g==
   dependencies:
     "@emotion/react" "^11.10.0"
     "@emotion/styled" "^11.10.0"
@@ -3495,10 +3495,10 @@
     tiny-invariant "^1.2.0"
     wagmi "^0.2.28"
 
-"@thirdweb-dev/sdk@^3.6.3-nightly-2eaa67a":
-  version "3.6.3-nightly-2eaa67a"
-  resolved "https://registry.yarnpkg.com/@thirdweb-dev/sdk/-/sdk-3.6.3-nightly-2eaa67a.tgz#476ec76c64c9aada1aede69ea072d74f8e8eed4c"
-  integrity sha512-3gdXFmQdyUJzaQS+X978dwWbMUA/XQLqSk0qsuGGtuiocf17fZhNsif2JYblubUrxGnwoo+j60H5274gy9RbEw==
+"@thirdweb-dev/sdk@^3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@thirdweb-dev/sdk/-/sdk-3.6.2.tgz#1d84bfe088f7f63e8f99693c7abe8fbe7c91f2ba"
+  integrity sha512-D2N8NgQFQdQ56cZ7q+NNe7Va04qALOEip9PtlrOvrGvr8BU4v8oCkys4IhBig57b2ONHaQVrqhdOaoMvak+gVQ==
   dependencies:
     "@metaplex-foundation/js" "^0.17.6"
     "@metaplex-foundation/mpl-token-metadata" "^2.3.3"
@@ -3806,7 +3806,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
-"@types/react-dom@^18":
+"@types/react-dom@^18", "@types/react-dom@^18.0.9":
   version "18.0.9"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.9.tgz#ffee5e4bfc2a2f8774b15496474f8e7fe8d0b504"
   integrity sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==
@@ -3827,14 +3827,14 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-vis@^1.11.10":
+"@types/react-vis@^1.11.11":
   version "1.11.11"
   resolved "https://registry.yarnpkg.com/@types/react-vis/-/react-vis-1.11.11.tgz#2cc53acfb3a1f617572ac662982dc9fa3f985ba9"
   integrity sha512-hmm0sPseBNp4hFqQuvR7Tte5k3QmSf2rhZmn5An31rZeuv69pyq16ZcbSS91XMgRdAfC+GA33OvCZq624d9ncg==
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18":
+"@types/react@*", "@types/react@^18", "@types/react@^18.0.25":
   version "18.0.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.25.tgz#8b1dcd7e56fe7315535a4af25435e0bb55c8ae44"
   integrity sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==
@@ -11455,7 +11455,7 @@ tiny-glob@^0.2.9:
     globalyzer "0.1.0"
     globrex "^0.1.2"
 
-tiny-invariant@^1.0.6, tiny-invariant@^1.2.0:
+tiny-invariant@^1.0.6, tiny-invariant@^1.2.0, tiny-invariant@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
   integrity sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==
